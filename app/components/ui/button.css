@@ -1,0 +1,57 @@
+.btnWelcome {
+  --border-width: 2px;
+  --btn-width: 200px;
+  --btn-height: 50px;
+  --btn-radius: 10px;
+  position: relative;
+  background: white;
+  border-radius: var(--btn-radius);
+  font-size: 0.875rem /* 14px */;
+  line-height: 1.25rem /* 20px */;
+  width: var(--btn-width);
+  height: var(--btn-height);
+  overflow: hidden;
+}
+
+.btnWelcome button {
+  position: absolute;
+  background: transparent;
+  inset: 0;
+  z-index: 10;
+  gap: 10;
+}
+
+.btnWelcome::after {
+  content: '';
+  position: absolute;
+  background: inherit;
+  border: inherit;
+  border-radius: calc(var(--btn-radius) - 2px)
+    /* match with outside radius */;
+  inset: var(--border-width);
+  height: calc(100% - 2 * var(--border-width));
+  width: calc(100% - 2 * var(--border-width));
+}
+
+.btnWelcome::before {
+  content: '';
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    hsla(197, 100%, 64%, 1) 0%,
+    hsla(339, 100%, 55%, 1) 100%
+  );
+  width: 100%;
+  aspect-ratio: 1/1;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: scale(1.4) rotate(0turn);
+  }
+
+  to {
+    transform: scale(1.4) rotate(1turn);
+  }
+}

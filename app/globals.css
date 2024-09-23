@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --greenblue: #0b4055;
+  --lightgrey: #f7f9fd;
+  --bg-grad: linear-gradient(0.301turn, #ebfcff 6.11%, #f5e9ff 187.16%);
+  --skyblue: #d2e5f6;
+}
+
+.text-blue {
+  color: var(--greenblue);
+}
+.card-grad-bg {
+  background: var(--bg-grad);
+}
+.card-bg {
+  background-color: var(--lightgrey);
+}
+.bg-skyblue {
+  background-color: var(--skyblue);
+}
