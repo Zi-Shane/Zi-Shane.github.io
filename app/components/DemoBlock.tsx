@@ -7,15 +7,9 @@ const DemoBlock = () => {
       <h1 className="text-4xl font-semibold my-4 text-center">
         A small selection of recent projects
       </h1>
-      <div className="flex lg:flex-row flex-col justify-center gap-3 my-10">
-        {demoGridItem.map(({ id, img, content, className, link }) => (
-          <DemoCard
-            key={id}
-            img={img}
-            content={content}
-            cardClassName={className}
-            link={link}
-          />
+      <div className="flex lg:flex-row flex-col justify-center items-center gap-3 my-10">
+        {demoGridItem.map(({ id, img, content, link }) => (
+          <DemoCard key={id} img={img} content={content} link={link} />
         ))}
       </div>
     </div>

@@ -1,6 +1,7 @@
 import Button from './ui/Button';
 import { contactBtn, socialMediaIcon, contactBtnCopied } from '@/data';
 import SocialMedia from './ui/SocialMedia';
+import { CiMail } from 'react-icons/ci';
 
 const Contact = () => {
   return (
@@ -14,10 +15,11 @@ const Contact = () => {
           content={contactBtn}
           canCopy={true}
           copiedMessage={contactBtnCopied}
+          icon={<CiMail />}
         />
       </div>
-      <div className="md:w-[90vw] w-full flex md:flex-row flex-col justify-between items-center">
-        <p className="md:text-xl">Copyright © 2024 Zi-Shane</p>
+      <div className="w-full flex md:flex-row flex-col justify-between items-center">
+        <p className="md:text-lg">Copyright © 2024 Zi-Shane</p>
         <div className="flex gap-3 pt-2">
           {socialMediaIcon.map(({ id, path, url }) => (
             <SocialMedia key={id} id={id} path={path} url={url} />

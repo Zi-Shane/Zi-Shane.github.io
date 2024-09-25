@@ -1,31 +1,39 @@
 'use client';
 
-import { FaLocationArrow } from 'react-icons/fa6';
 import './button.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { mailAddress } from '@/data';
 
 const Button = ({
   content,
   canCopy = false,
   copiedMessage = '',
+  icon,
 }: {
   content: string;
   canCopy?: boolean;
   copiedMessage?: string;
+  icon: JSX.Element;
 }) => {
-  const [message, setMessage] = useState(content);
+  const [isClick, setIsClick] = useState(false);
 
-  function changeContent() {
-    return new Promise(res => {
-      setTimeout(() => {
-        setMessage(content);
+  useEffect(() => {
+    let timer: string | number | NodeJS.Timeout | undefined;
+
+    if (isClick) {
+      timer = setTimeout(() => {
+        setIsClick(false);
       }, 3000);
-    });
-  }
+    }
 
-  async function handleClick() {
-    setMessage(copiedMessage);
-    await changeContent();
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [isClick]);
+
+  function handleClick() {
+    navigator.clipboard.writeText(mailAddress);
+    setIsClick(true);
   }
 
   return (
@@ -33,9 +41,9 @@ const Button = ({
       className="btnWelcome"
       onClick={canCopy ? handleClick : undefined}
     >
-      <button id="btn">
-        {message}
-        <FaLocationArrow className="inline ml-2" />
+      <button id="btn" className="flex justify-center items-center">
+        {isClick ? copiedMessage : content}
+        <span className="inline ml-2">{icon}</span>
       </button>
     </div>
   );

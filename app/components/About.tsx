@@ -3,7 +3,7 @@ import ExpCard from './ui/ExpCard';
 
 const About = () => {
   return (
-    <div className="">
+    <div className="w-[4/5]">
       <h1 className="text-4xl font-semibold my-4 text-center">
         My work experience
       </h1>
