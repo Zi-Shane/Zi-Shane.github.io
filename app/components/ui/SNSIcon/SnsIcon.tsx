@@ -1,4 +1,4 @@
-const SocialMedia = ({
+const SnsIcon = ({
   id,
   path,
   url,
@@ -20,4 +20,4 @@ const SocialMedia = ({
   );
 };
 
-export default SocialMedia;
+export default SnsIcon;

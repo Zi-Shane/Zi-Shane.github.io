@@ -1,6 +1,6 @@
 import { aboutGridItem } from '@/data';
-import ExpCard from './ui/ExpCard';
-import Button from './ui/Button';
+import ExpCard from './ui/ExpCard/ExpCard';
+import Button from './ui/Button/Button';
 import { FaRegFilePdf } from 'react-icons/fa6';
 
 const About = () => {

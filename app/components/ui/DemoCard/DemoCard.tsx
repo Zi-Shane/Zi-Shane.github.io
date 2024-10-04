@@ -20,7 +20,7 @@ const DemoCard = ({
           </p>
           <div className="font-medium text-blue h-[1rem] flex justify-end items-center gap-2 my-4">
             <p>check live site</p>
-            <img src="/arrow.svg" alt="" />
+            <img src="/arrow.svg" alt="->" />
           </div>
         </div>
       </div>

@@ -1,10 +1,6 @@
-import Button from './ui/Button';
-import {
-  contactBtn,
-  socialMediaIcon,
-  contactBtnCopied,
-} from '@/data';
-import SocialMedia from './ui/SocialMedia';
+import Button from './ui/Button/Button';
+import { contactBtn, socialMediaIcon, contactBtnCopied } from '@/data';
+import SocialMedia from './ui/SNSIcon/SnsIcon';
 import { CiMail } from 'react-icons/ci';
 import { FaCheck } from 'react-icons/fa6';
 

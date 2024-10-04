@@ -3,6 +3,7 @@
 import './button.css';
 import { useEffect, useState } from 'react';
 import { mailAddress } from '@/data';
+import useClicked from './useClicked';
 
 const Button = ({
   content,
@@ -18,26 +19,7 @@ const Button = ({
   icon?: JSX.Element;
   iconClicked?: JSX.Element;
 }) => {
-  const [isClick, setIsClick] = useState(false);
-
-  useEffect(() => {
-    let timer: string | number | NodeJS.Timeout | undefined;
-
-    if (isClick) {
-      timer = setTimeout(() => {
-        setIsClick(false);
-      }, 3000);
-    }
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, [isClick]);
-
-  function handleClick() {
-    navigator.clipboard.writeText(mailAddress);
-    setIsClick(true);
-  }
+  const [isClick, handleClick] = useClicked();
 
   return (
     <div

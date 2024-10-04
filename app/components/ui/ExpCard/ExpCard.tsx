@@ -13,7 +13,7 @@ const ExpCard = ({
       <div className="h-[200px] flex md:flex-row flex-col md:items-center lg:justify-normal justify-center p-10 gap-2">
         <img
           src={pic}
-          alt=""
+          alt="icon"
           className="md:h-[150px] md:w-[120px] h-[50px] w-[40px]"
         />
         <div className="flex flex-col w-[360px] md:p-[20px]">
