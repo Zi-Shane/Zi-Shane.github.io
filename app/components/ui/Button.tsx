@@ -7,13 +7,16 @@ import { mailAddress } from '@/data';
 const Button = ({
   content,
   canCopy = false,
-  copiedMessage = '',
+  clickedMessage = '',
   icon,
+  iconClicked,
+  ...props
 }: {
   content: string;
   canCopy?: boolean;
-  copiedMessage?: string;
-  icon: JSX.Element;
+  clickedMessage?: string;
+  icon?: JSX.Element;
+  iconClicked?: JSX.Element;
 }) => {
   const [isClick, setIsClick] = useState(false);
 
@@ -38,12 +41,13 @@ const Button = ({
 
   return (
     <div
-      className="btnWelcome"
+      className="btnAnimate"
       onClick={canCopy ? handleClick : undefined}
+      {...props}
     >
       <button id="btn" className="flex justify-center items-center">
-        {isClick ? copiedMessage : content}
-        <span className="inline ml-2">{icon}</span>
+        {isClick ? clickedMessage : content}
+        <span className="inline ml-2">{isClick ? iconClicked : icon}</span>
       </button>
     </div>
   );

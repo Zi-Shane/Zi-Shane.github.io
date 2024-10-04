@@ -5,7 +5,7 @@ import Welcome from './components/Welcome';
 
 export default function Home() {
   return (
-    <main className="relative bg-white-100 flex flex-col justify-center items-center px-5">
+    <main className="relative bg-white-100 flex flex-col justify-center items-center">
       <div className="max-w-7xl w-full">
         <Welcome />
         <div>

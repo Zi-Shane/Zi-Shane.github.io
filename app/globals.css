@@ -1,10 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
   --greenblue: #0b4055;
-  --lightgrey: #f7f9fd;
+  --lightgrey: #d2e5f644;
   --bg-grad: linear-gradient(0.301turn, #ebfcff 6.11%, #f5e9ff 187.16%);
   --skyblue: #d2e5f6;
 }
@@ -21,3 +17,7 @@
 .bg-skyblue {
   background-color: var(--skyblue);
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

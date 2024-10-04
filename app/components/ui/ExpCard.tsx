@@ -17,8 +17,12 @@ const ExpCard = ({
           className="md:h-[150px] md:w-[120px] h-[50px] w-[40px]"
         />
         <div className="flex flex-col w-[360px] md:p-[20px]">
-          <h3 className="md:text-2xl text-xl font-bold">{title}</h3>
-          <p className="text-sm font-semibold mt-4">{content}</p>
+          <h3 className="md:text-2xl text-xl font-bold whitespace-pre-wrap">
+            {title}
+          </h3>
+          <p className="text-sm font-semibold mt-4 whitespace-pre-wrap">
+            {content}
+          </p>
         </div>
       </div>
     </div>

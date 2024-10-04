@@ -1,4 +1,4 @@
-.btnWelcome {
+.btnAnimate {
   --border-width: 2px;
   --btn-width: 200px;
   --btn-height: 50px;
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.btnWelcome button {
+.btnAnimate button {
   position: absolute;
   background: transparent;
   inset: 0;
@@ -21,7 +21,7 @@
   gap: 10;
 }
 
-.btnWelcome::after {
+.btnAnimate::after {
   content: '';
   position: absolute;
   background: inherit;
@@ -33,17 +33,13 @@
   width: calc(100% - 2 * var(--border-width));
 }
 
-.btnWelcome::before {
+.btnAnimate::before {
   content: '';
   position: absolute;
-  background: linear-gradient(
-    90deg,
-    hsla(197, 100%, 64%, 1) 0%,
-    hsla(339, 100%, 55%, 1) 100%
-  );
+  background: linear-gradient(90deg, #66e3ff 6.11%, #ba67ff 187.16%);
   width: 100%;
   aspect-ratio: 1/1;
-  animation: rotate 4s linear infinite;
+  animation: rotate 3s linear infinite;
 }
 
 @keyframes rotate {
