@@ -32,10 +32,10 @@ Crypto price dashboard`,
   },
   {
     id: 2,
-    img: '/shoppinglist-snap.png',
-    content: `購物清單
-Shoppinglist with fetching api`,
-    link: 'https://zi-shane.github.io/shopping-list/',
+    img: '/frontendeval-snap.png',
+    content: `前端開發
+React Development Website`,
+    link: 'https://zi-shane.github.io/frontendeval/',
   },
   {
     id: 3,
