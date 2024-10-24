@@ -1,5 +1,5 @@
-export const WelcomeTitle = '旅行 / 寫程式 / 獨立工作者';
-export const WelcomeSub = 'Traveler & Programer';
+export const WelcomeTitle = '寫程式 / 旅行 / 獨立工作者';
+export const WelcomeSub = 'Programer & Traveler';
 
 export const aboutGridItem = [
   {
