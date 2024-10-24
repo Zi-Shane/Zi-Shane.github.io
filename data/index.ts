@@ -56,10 +56,20 @@ export const socialMediaIcon = [
     url: 'https://github.com/Zi-Shane',
     path: '/git.svg',
   },
+  // {
+  //   id: 'linkedin',
+  //   url: 'https://www.linkedin.com/in/tzu-hsuan-huang-812940145/',
+  //   path: '/link.svg',
+  // },
   {
-    id: 'linkedin',
-    url: 'https://www.linkedin.com/in/tzu-hsuan-huang-812940145/',
-    path: '/link.svg',
+    id: 'medium',
+    url: 'https://medium.com/@zishane',
+    path: 'md.svg',
+  },
+  {
+    id: 'youtube',
+    url: 'https://www.youtube.com/@ZiXuanChannel',
+    path: 'yt.svg',
   },
   {
     id: 'istagram',
