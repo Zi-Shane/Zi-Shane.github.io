@@ -1,8 +1,7 @@
 'use client';
 
+import { cn } from '@/app/utils/cssUtils';
 import './button.css';
-import { useEffect, useState } from 'react';
-import { mailAddress } from '@/data';
 import useClicked from './useClicked';
 
 const Button = ({
@@ -11,21 +10,21 @@ const Button = ({
   clickedMessage = '',
   icon,
   iconClicked,
-  ...props
+  className,
 }: {
   content: string;
   canCopy?: boolean;
   clickedMessage?: string;
   icon?: JSX.Element;
   iconClicked?: JSX.Element;
+  className?: string;
 }) => {
   const [isClick, handleClick] = useClicked();
 
   return (
     <div
-      className="btnAnimate"
+      className={cn('btnAnimate', className)}
       onClick={canCopy ? handleClick : undefined}
-      {...props}
     >
       <button id="btn" className="flex justify-center items-center">
         {isClick ? clickedMessage : content}

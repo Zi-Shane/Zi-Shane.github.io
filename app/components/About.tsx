@@ -5,7 +5,7 @@ import { FaRegFilePdf } from 'react-icons/fa6';
 
 const About = () => {
   return (
-    <div className="w-[4/5]">
+    <div>
       <h1 className="text-4xl font-semibold my-4 text-center">
         ABOUT ME 關於我
       </h1>

@@ -21,3 +21,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .text-gray_gradient {
+    @apply bg-gradient-to-r from-[#58586b] from-20% via-[#484859] via-60% to-[#343440] to-100% bg-clip-text text-transparent;
+  }
+}
