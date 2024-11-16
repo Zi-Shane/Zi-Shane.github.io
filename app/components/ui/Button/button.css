@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-.btnAnimate button {
+.btnAnimate #btn {
   position: absolute;
   background: transparent;
   inset: 0;

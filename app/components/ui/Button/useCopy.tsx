@@ -1,7 +1,6 @@
-import { mailAddress } from '@/data';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
-function useClicked() {
+function useCopy(content: string) {
   const [isClick, setIsClick] = useState(false);
 
   useEffect(() => {
@@ -19,11 +18,11 @@ function useClicked() {
   }, [isClick]);
 
   function handleClick() {
-    navigator.clipboard.writeText(mailAddress);
+    navigator.clipboard.writeText(content);
     setIsClick(true);
   }
 
   return [isClick, handleClick] as const;
 }
 
-export default useClicked;
+export default useCopy;

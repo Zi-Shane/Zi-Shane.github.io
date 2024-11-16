@@ -2,6 +2,7 @@ import { aboutGridItem } from '@/data';
 import ExpCard from './ui/ExpCard/ExpCard';
 import Button from './ui/Button/Button';
 import { FaRegFilePdf } from 'react-icons/fa6';
+import ContentWithIcon from './ui/Button/ContentWithIcon';
 
 const About = () => {
   return (
@@ -22,7 +23,9 @@ const About = () => {
       </div>
       <div className="flex justify-center">
         <a href="IOT_cv.pdf">
-          <Button content="Resume" icon={<FaRegFilePdf />} />
+          <Button>
+            <ContentWithIcon msg={'Resume'} icon={<FaRegFilePdf />} />
+          </Button>
         </a>
       </div>
     </div>

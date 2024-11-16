@@ -1,8 +1,9 @@
-import Button from './ui/Button/Button';
 import { contactBtn, socialMediaIcon, contactBtnCopied } from '@/data';
 import SocialMedia from './ui/SNSIcon/SnsIcon';
 import { CiMail } from 'react-icons/ci';
 import { FaCheck } from 'react-icons/fa6';
+import CopiedButton from './ui/Button/CopiedButton';
+import ContentWithIcon from './ui/Button/ContentWithIcon';
 
 const Contact = () => {
   return (
@@ -12,14 +13,15 @@ const Contact = () => {
         <h1 className="text-[30px] lg:text-5xl font-medium">
           Let&apos;s get in touch
         </h1>
-        <Button
+        <CopiedButton
           className="mt-6"
-          content={contactBtn}
-          canCopy={true}
-          clickedMessage={contactBtnCopied}
-          icon={<CiMail />}
-          iconClicked={<FaCheck />}
-        />
+          originalChildren={
+            <ContentWithIcon msg={contactBtn} icon={<CiMail />} />
+          }
+          clickedChildren={
+            <ContentWithIcon msg={contactBtnCopied} icon={<FaCheck />} />
+          }
+        ></CopiedButton>
       </div>
       <footer className="flex sm:flex-row flex-col justify-between items-center py-4 mx-2">
         <p className="md:text-lg">Copyright © 2024 Zi-Shane</p>
