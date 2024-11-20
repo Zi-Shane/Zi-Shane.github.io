@@ -1,17 +1,18 @@
-import DemoBlock from './components/DemoBlock';
-import About from './components/About';
-import Contact from './components/Contact';
-import Welcome from './components/Welcome';
+import DemoBlock from './components/demo/DemoBlock';
+import About from './components/exp/About';
+import Contact from './components/footer/Contact';
+import Welcome from './components/welcome/Welcome';
+import Footer from './components/footer/Footer';
 
 export default function Home() {
   return (
-    // <main className="relative bg-white-100 flex flex-col justify-center items-center">
     <main>
       <Welcome />
       <div className="max-w-7xl mx-auto">
         <DemoBlock />
         <About />
         <Contact />
+        <Footer />
       </div>
     </main>
   );

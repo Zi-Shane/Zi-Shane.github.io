@@ -16,7 +16,7 @@ const ExpCard = ({
           alt="icon"
           className="md:h-[150px] md:w-[120px] h-[50px] w-[40px]"
         />
-        <div className="flex flex-col w-[360px] md:p-[20px]">
+        <div className="flex flex-col w-fit md:p-[20px]">
           <h3 className="md:text-2xl text-xl font-bold whitespace-pre-wrap">
             {title}
           </h3>

@@ -1,5 +1,5 @@
 import { demoGridItem } from '@/data';
-import DemoCard from './ui/DemoCard/DemoCard';
+import DemoCard from './DemoCard';
 
 const DemoBlock = () => {
   return (
