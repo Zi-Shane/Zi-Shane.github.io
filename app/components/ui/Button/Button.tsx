@@ -10,7 +10,7 @@ interface ButtonProps extends HTMLAttributes<HTMLDivElement> {
 const Button = ({ className, children, handleClick }: ButtonProps) => {
   return (
     <div className={cn('btnAnimate', className)} onClick={handleClick}>
-      <button id="btn" className="flex justify-center items-center">
+      <button id="btn" className="flex items-center justify-center">
         {children}
       </button>
     </div>

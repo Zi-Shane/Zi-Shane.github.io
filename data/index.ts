@@ -39,10 +39,10 @@ React Development Website`,
   },
   {
     id: 3,
-    img: '/timer-snap.png',
-    content: `倒數計時器
-\Timer with animation and alert message`,
-    link: 'https://zi-shane.github.io/web-timer/',
+    img: '/jcb-chrome.png',
+    content: `自動填表單Chrome extension
+\Chrome extention can autofill JCB event page`,
+    link: 'https://github.com/Zi-Shane/jcb-autofill',
   },
 ];
 

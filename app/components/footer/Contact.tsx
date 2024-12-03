@@ -7,9 +7,9 @@ import ContentWithIcon from '../ui/Button/ContentWithIcon';
 const Contact = () => {
   return (
     <>
-      <div className="flex flex-col justify-center items-center py-36">
-        <h1 className="text-4xl lg:text-5xl font-medium">與我聯繫</h1>
-        <h1 className="text-4xl lg:text-5xl font-medium">
+      <div className="flex flex-col items-center justify-center py-36">
+        <h1 className="text-4xl font-medium lg:text-5xl">與我聯繫</h1>
+        <h1 className="text-4xl font-medium lg:text-5xl">
           Let&apos;s get in touch
         </h1>
         <CopiedButton

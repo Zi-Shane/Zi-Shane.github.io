@@ -7,10 +7,10 @@ import ContentWithIcon from '../ui/Button/ContentWithIcon';
 const About = () => {
   return (
     <div>
-      <h1 className="text-4xl font-semibold my-4 text-center">
+      <h1 className="my-4 text-center text-4xl font-semibold">
         ABOUT ME 關於我
       </h1>
-      <div className="grid lg:grid-cols-2 grid-cols-1 auto-cols-auto gap-4 mx-4 my-10">
+      <div className="mx-4 my-10 grid auto-cols-auto grid-cols-1 gap-4 lg:grid-cols-2">
         {aboutGridItem.map(({ id, title, content, pic, className }) => (
           <ExpCard
             key={id}

@@ -8,17 +8,17 @@ const DemoCard = ({
   link: string;
 }) => {
   return (
-    <a href={link} className="lg:w-full m-w-[400px] card-bg rounded-lg">
-      <div className="py-4 px-4">
+    <a href={link} className="m-w-[400px] card-bg rounded-lg lg:w-full">
+      <div className="px-4 py-4">
         <img
           src={img}
-          className="w-full h-[250px] rounded-xl object-cover object-center bg-slate-100 flex flex-col mb-4"
+          className="mb-4 flex h-[250px] w-full flex-col rounded-xl bg-slate-100 object-cover object-center"
         ></img>
         <div className="mx-2">
-          <p className="h-[4rem] my-4 text-base font-bold whitespace-pre-wrap">
+          <p className="my-4 h-[4rem] whitespace-pre-wrap text-base font-bold">
             {content}
           </p>
-          <div className="font-medium text-blue h-[1rem] flex justify-end items-center gap-2 my-4">
+          <div className="text-blue my-4 flex h-[1rem] items-center justify-end gap-2 font-medium">
             <p>check live site</p>
             <img src="/arrow.svg" alt="->" />
           </div>

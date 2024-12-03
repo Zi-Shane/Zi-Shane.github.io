@@ -10,17 +10,17 @@ const ExpCard = ({
 }) => {
   return (
     <div className="card-grad-bg rounded-2xl">
-      <div className="h-[200px] flex md:flex-row flex-col md:items-center lg:justify-normal justify-center p-10 gap-2">
+      <div className="flex h-[200px] flex-col justify-center gap-2 p-10 md:flex-row md:items-center lg:justify-normal">
         <img
           src={pic}
           alt="icon"
-          className="md:h-[150px] md:w-[120px] h-[50px] w-[40px]"
+          className="h-[50px] w-[40px] md:h-[150px] md:w-[120px]"
         />
-        <div className="flex flex-col w-fit md:p-[20px]">
-          <h3 className="md:text-2xl text-xl font-bold whitespace-pre-wrap">
+        <div className="flex w-fit flex-col md:p-[20px]">
+          <h3 className="whitespace-pre-wrap text-xl font-bold md:text-2xl">
             {title}
           </h3>
-          <p className="text-sm font-semibold mt-4 whitespace-pre-wrap">
+          <p className="mt-4 whitespace-pre-wrap text-sm font-semibold">
             {content}
           </p>
         </div>

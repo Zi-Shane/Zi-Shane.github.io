@@ -11,7 +11,7 @@ const SnsIcon = ({
     <a href={url}>
       <div className="">
         <img
-          className="bg-skyblue w-10 aspect-square p-2 rounded-lg"
+          className="bg-skyblue aspect-square w-10 rounded-lg p-2"
           src={path}
           alt={id}
         />

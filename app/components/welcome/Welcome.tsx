@@ -5,21 +5,21 @@ import WelcomeFancy from './WelcomeFancy';
 
 const Welcome = () => {
   return (
-    <div className="card-grad-bg lg:py-28 py-20">
-      <div className="h-full w-full px-20 md:gap-20 flex justify-center items-center">
+    <div className="card-grad-bg py-20 lg:py-28">
+      <div className="flex h-full w-full items-center justify-center px-20 md:gap-20">
         <div className="flex items-center">
           <AnimationPlane />
           <div>
-            <p className="text-3xl lg:text-4xl font-medium text-center">
+            <p className="text-center text-3xl font-medium lg:text-4xl">
               {WelcomeTitle}
             </p>
-            <p className="text-xl font-normal text-gray_gradient text-center">
+            <p className="text-gray_gradient text-center text-xl font-normal">
               {WelcomeSub}
             </p>
           </div>
         </div>
 
-        <div className="h-80 hidden md:block">
+        <div className="hidden h-80 md:block">
           <WelcomeFancy />
         </div>
       </div>

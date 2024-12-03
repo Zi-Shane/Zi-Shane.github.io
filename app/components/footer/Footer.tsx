@@ -3,9 +3,9 @@ import SocialMedia from './SnsIcon';
 
 const Footer = () => {
   return (
-    <footer className="flex sm:flex-row flex-col justify-between items-center py-4 mx-2">
+    <footer className="mx-2 flex flex-col items-center justify-between py-4 sm:flex-row">
       <p className="md:text-lg">Copyright © 2024 Zi-Shane</p>
-      <div className="flex gap-3 mt-2">
+      <div className="mt-2 flex gap-3">
         {socialMediaIcon.map(({ id, path, url }) => (
           <SocialMedia key={id} id={id} path={path} url={url} />
         ))}

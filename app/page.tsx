@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main>
       <Welcome />
-      <div className="max-w-7xl mx-auto">
+      <div className="mx-auto max-w-7xl">
         <DemoBlock />
         <About />
         <Contact />
