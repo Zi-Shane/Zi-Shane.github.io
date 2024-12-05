@@ -11,11 +11,10 @@ const WelcomeFancy = () => {
   return (
     <Canvas>
       <Suspense fallback={<CanvasLoader />}>
-        <WelcomeFancyMove>
-          <WelcomeFancyRotation>
-            <Earth position={[0.3, -2.6, 0]} scale={2.5} />
-          </WelcomeFancyRotation>
-        </WelcomeFancyMove>
+        <WelcomeFancyRotation>
+          <Earth position={[0.3, -2.6, 0]} scale={2.5} />
+        </WelcomeFancyRotation>
+
         <directionalLight intensity={3} position={[5, 2, 30]} />
       </Suspense>
     </Canvas>

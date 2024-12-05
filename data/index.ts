@@ -28,21 +28,24 @@ export const demoGridItem = [
     img: '/dashboard-snap.png',
     content: `加密貨幣即時價格表
 Crypto price dashboard`,
-    link: 'https://zi-shane.github.io/crypto-dashboard/',
+    githubLink: 'https://github.com/Zi-Shane/crypto-dashboard',
+    demoLink: 'https://zi-shane.github.io/crypto-dashboard/',
   },
   {
     id: 2,
     img: '/frontendeval-snap.png',
     content: `前端開發
 React Development Website`,
-    link: 'https://zi-shane.github.io/frontendeval/',
+    githubLink: 'https://github.com/Zi-Shane/frontendeval',
+    demoLink: 'https://zi-shane.github.io/frontendeval/',
   },
   {
     id: 3,
     img: '/jcb-chrome.png',
     content: `自動填表單Chrome extension
 \Chrome extention can autofill JCB event page`,
-    link: 'https://github.com/Zi-Shane/jcb-autofill',
+    githubLink: 'https://github.com/Zi-Shane/jcb-autofill',
+    demoLink: 'https://youtu.be/e_C7zHSiEhQ',
   },
 ];
 
