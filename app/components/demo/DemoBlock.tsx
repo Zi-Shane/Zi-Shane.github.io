@@ -8,15 +8,18 @@ const DemoBlock = () => {
         PORTFOLIO 網站作品
       </h1>
       <div className="my-10 flex flex-col items-center justify-center gap-3 lg:flex-row">
-        {demoGridItem.map(({ id, img, content, githubLink, demoLink }) => (
-          <DemoCard
-            key={id}
-            img={img}
-            content={content}
-            githubLink={githubLink}
-            demoLink={demoLink}
-          />
-        ))}
+        {demoGridItem.map(
+          ({ id, img, content, githubLink, demoLink, tech }) => (
+            <DemoCard
+              key={id}
+              img={img}
+              content={content}
+              githubLink={githubLink}
+              demoLink={demoLink}
+              tech={tech}
+            />
+          ),
+        )}
       </div>
     </div>
   );

@@ -1,13 +1,17 @@
+import TechBlock from './TechBlock';
+
 const DemoCard = ({
   img,
   content,
   githubLink,
   demoLink,
+  tech = [],
 }: {
   img: string;
   content: string;
   githubLink: string;
   demoLink: string;
+  tech: string[];
 }) => {
   return (
     <div className="m-w-[400px] card-bg rounded-lg px-4 py-4 lg:w-full">
@@ -19,6 +23,7 @@ const DemoCard = ({
         <p className="my-4 h-[4rem] whitespace-pre-wrap text-base font-bold">
           {content}
         </p>
+        <TechBlock iconList={tech} />
         <div className="my-4 mt-10 flex justify-between">
           <a href={githubLink}>
             <img className="h-6 w-6" src="/git.svg" />
